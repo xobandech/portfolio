@@ -75,23 +75,23 @@
         <div class="w-[45%] md:pl-5 hidden sm:block">
           <!-- MY PHOTO -->
           <img
-            class="w-48 h-48 2xl:m-auto rounded-full outline-2 outline-purple-500 outline"
+            class="w-48 h-48git 2xl:m-auto rounded-full outline-2 outline-purple-500 outline"
             src="/components/myphoto.png"
             alt="My Photo"
+            style="border-radius: 50%;"
           />
         </div>
-        </section>
-        
-        <div class="absolute m-5 bottom-0 right-0 w-14">
-            <a href="#down">
-              <img src="/components/down.png" alt="">
-            </a>
-          </div>
-        
+      </section>
+
+      <div class="absolute m-5 bottom-0 right-0 w-14">
+        <a href="#down">
+          <img src="/components/down.png" alt="" />
+        </a>
+      </div>
     </div>
     <!-- SECOND SECTION WHITE -->
     <div
-      class="text-white w-[70%] justify-center flex text-sm xl:w-[60%] mx-auto h-[15%] border-x-2 border-purple-500 left-[50%] bg-slate-100 bg-cover"
+      class="text-white w-[70%] justify-center flex max-md:h-[30%] md:text-[0.8em] max-md:flex-col text-sm xl:w-[60%] mx-auto h-[15%] border-x-2 border-purple-500 left-[50%] bg-slate-100 bg-cover"
       style="
         font-family: monospace;
         background: rgb(186, 16, 191);
@@ -100,44 +100,44 @@
         background: linear-gradient(to bottom, #26282b, #ad5389);
       "
     >
-      <section class="md:w-[60%] w-[100%] text-[0.8rem] mt-2 ">
-        <h2 class="flex justify-center uppercase">My skills</h2>
-        <div class="w-[100%] flex md:justify-around justify-around">
-          <div class="items-center flex flex-col">
-            <h3 class="text-violet-500">Languages</h3>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JS</p>
+        <section class="md:w-[60%] w-[100%] text-[1em] mt-2">
+          <h2 class="flex justify-center uppercase">My skills</h2>
+          <div class="w-[100%] flex md:justify-around justify-around">
+            <div class="items-center flex flex-col">
+              <h3 class="text-violet-500">Languages</h3>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JS</p>
+            </div>
+            <div class="items-center flex flex-col">
+              <h3 class="text-violet-500">Frameworks</h3>
+              <p>React</p>
+              <p>Redux</p>
+              <p>Tailwind</p>
+              <p>Bootstrap</p>
+            </div>
+            <div class="items-center flex flex-col">
+              <h3 class="text-violet-500">Tools</h3>
+              <p>Git</p>
+              <p>Sass</p>
+            </div>
           </div>
-          <div class="items-center flex flex-col">
-            <h3 class="text-violet-500">Frameworks</h3>
-            <p>React</p>
-            <p>Redux</p>
-            <p>Tailwind</p>
-            <p>Bootstrap</p>
-          </div>
-          <div class="items-center flex flex-col">
-            <h3 class="text-violet-500">Tools</h3>
-            <p>Git</p>
-            <p>Sass</p>
-          </div>
-        </div>
-      </section>
-      <section class="w-[40%] md:block mx-auto hidden mt-2 ">
-        <h2 class="uppercase text-center">About me</h2>
-        <div class="leading-4 xl:leading-6 text-[0.7rem] max-2xl:text-[0.6rem]">
-            <p>
-               Location - Slovakia, Košice
-            </p>
-            <p>
-                Age - 17
+        </section>
+        <section class="w-[40%] md:block mx-auto mt-2">
+          <h2 class="uppercase text-center">About me</h2>
+          <div
+            class="leading-4 xl:leading-6 text-[0.7rem] max-2xl:text-[0.6rem]"
+          >
+            <p>Location - Slovakia, Košice</p>
+            <p>Age - 17</p>
+            <p class="leading-3 xl:leading-4">
+              Education - Bc. Intelligent Systems (2022-2025)
             </p>
             <p class="leading-3 xl:leading-4">
-                Education - Bc. Intelligent Systems (2022-2025)
+              Passionate about self-learning and web-development
             </p>
-            <p class="leading-3 xl:leading-4">Passionate about self-learning and web-development</p>
-        </div>
-      </section>
+          </div>
+        </section>
     </div>
   </body>
   <script src="https://cdn.tailwindcss.com"></script>
