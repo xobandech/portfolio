@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  mode: 'jit',
+  purge: ['./index.html'],
+  darkMode: false,
   theme: {
     extend: {
-      fontFamily: {
-        'sans': ['Proxima Nova', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        'serif': ['Playfair Display', 'Georgia', 'Times New Roman', 'serif'],
-        'mono': ['Roboto Mono', 'Courier New', 'monospace'],
+      screens: {
+        'vsm': '475px',
+        ...defaultTheme.screens,
       },
     },
   },
   plugins: [],
-}
-
+};
