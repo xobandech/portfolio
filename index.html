@@ -132,21 +132,21 @@
     >
       <!-- I added this breakpoint because my tailwind config doesnt accept it :( need to fix -->
       <style>
-        /* @media (max-width: 470px) {
-          #aboutme {
-            height: 1%;
-          }
-        } */
-        @media (max-width: 391px) {
+        @media (max-width: 470px) {
             #aboutme {
             height: 22%;
           }
+        }
+        @media (max-width: 391px) {
           #aboutme h3 {
             font-size: 0.74rem;
           }
           #contact-form {
             font-size:0.7rem;
-            margin-top: 2.5rem;
+            margin-top: 3.3rem;
+          }
+          @media only screen and (min-height: 844px) {
+
           }
         }
       </style>
@@ -210,19 +210,19 @@
         <input
           type="text"
           name="user_name"
-          class="text-black border-b-2 border-gray-400 rounded-none focus:outline-none"
+          class="text-black border-b-2 w-[90%] border-gray-400 rounded-none focus:outline-none"
         />
         <label class="text-left text-[0.6rem]">Email</label>
         <input
           type="email"
           name="user_email"
-          class="text-black border-b-2 border-gray-400 rounded-none focus:outline-none"
+          class="text-black border-b-2 w-[90%] border-gray-400 rounded-none focus:outline-none"
         />
         <label class="text-left text-[0.6rem]">Message</label>
         <textarea
           type="text"
           name="message"
-          class="text-black resize-none border-b-2 border-gray-400 rounded-none focus:outline-none"
+          class="text-black resize-none w-[90%] border-b-2 border-gray-400 rounded-none focus:outline-none"
         ></textarea>
         <button
           type="submit"
