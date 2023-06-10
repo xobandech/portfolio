@@ -40,7 +40,7 @@
       })();
     </script>
     <script type="text/javascript">
-      const submitForm = function () {
+      window.onload = function () {
         document
           .getElementById("contact-form")
           .addEventListener("submit", function (e) {
@@ -49,11 +49,21 @@
             const message = e.target.elements.message.value;
             const user_name = e.target.elements.user_name.value;
             try {
-              emailjs.send("service_3f3js1b", "template_n48gx9i", {
+              const templateParams = {
                 email: user_email,
                 message: message,
                 name: user_name,
-              });
+              };
+              emailjs
+                .send("service_3f3js1b", "template_n48gx9i", templateParams)
+                .then(
+                  function (response) {
+                    console.log("SUCCESS!", response.status, response.text);
+                  },
+                  function (error) {
+                    console.log("FAILED...", error);
+                  }
+                );
               e.target.reset();
             } catch (e) {
               console.log(e);
